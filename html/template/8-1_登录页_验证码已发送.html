@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta name="apple-touch-fullscreen" content="yes" /> 
+  <meta name="description" content="藤之声" /> 
+  <meta name="keywords" content="藤之声" /> 
+  <title>【藤之声】</title> 
+  <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon/favicon-32x32.png" /> 
+  <script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          if (clientWidth > 768) {
+            clientWidth = 768;
+          }
+          docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        recalc();
+    })(document, window);
+    </script> 
+  <style>
+
+    </style> 
+  <link rel="stylesheet" href="../static/style/index.css" /> 
+ </head> 
+ <body> 
+  <div id="app" class="app-loading" style="height: 568px;"> 
+   <div class="page page-auth page-login"><div class="form form-auth"><div class="field"><input type="number" name="phone" class="field-input" placeholder="请输入手机号"><a href="javascript: void(0);" class="btn btn-gray btn-xs btn-ghost btn-round">已发送</a></div><div class="field"><input type="number" name="authCode" class="field-input" placeholder="请输入验证码" maxlength="6"></div></div><a href="javascript: void(0);" class="btn btn-org btn-block submit-btn">登录</a>
+   <div class="to_reg">还没有账号？<a href="/reg">注册藤之声账号</a></div>
+ </div>
+
+   <div class="toast " id="输入错误class增加active"><span class="msg">请输入手机号</span></div>
+
+
+
+
+
+   
+  </div>
+  <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement;
+            var app = document.getElementById('app');
+    
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                app.style.height = docEl.clientHeight + 'px';
+            };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            recalc();
+        })(document, window);
+        </script>   
+ </body>
+</html>

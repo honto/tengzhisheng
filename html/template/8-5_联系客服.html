@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta name="apple-touch-fullscreen" content="yes" /> 
+  <meta name="description" content="藤之声" /> 
+  <meta name="keywords" content="藤之声" /> 
+  <title>【藤之声】</title> 
+  <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon/favicon-32x32.png" /> 
+  <script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          if (clientWidth > 768) {
+            clientWidth = 768;
+          }
+          docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        recalc();
+    })(document, window);
+    </script> 
+  <style>
+
+    </style> 
+  <link rel="stylesheet" href="../static/style/index.css" /> 
+ </head> 
+ <body> 
+  <div id="app" class="app-loading" style="height: 568px;"> 
+   <div class="page page-profile">
+    <div class="header">
+      <img src="../static/image/user/headpic.jpg" alt="">
+      <div class="profile-header-login"><i class="sprite sprite-angle-write"></i><a class="login-btn" href="/login">登录 / 注册</a></div>
+    </div>
+    <div class="link-group">
+      <a class="flex middle" title="我的订单" href="/login"><i class="profile-icon profile-icon-order"></i><span class="text">我的订单</span><i class="sprite sprite-angle-gray-right"></i></a>
+      <a class="flex middle" title="我的收藏" href="/login"><i class="profile-icon profile-icon-fav"></i><span class="text">我的收藏</span><i class="sprite sprite-angle-gray-right"></i></a>
+    </div>
+    <div class="link-group">
+      <a class="flex middle" title="联系客服" href="/login"><i class="profile-icon profile-icon-kefu"></i><span class="text">联系客服</span><span class="phone-summary">400-888-8888</span><i class="sprite sprite-angle-gray-right"></i></a>
+    </div>
+    <div class="tabbar"><div class="tabbar-wrapper row"><div class="tabbar-item"><a aria-current="true" href="/"></a></div><div class="tabbar-item"><a aria-current="false" href="###"></a></div><div class="tabbar-item"><a aria-current="false" href="###"></a></div><div class="tabbar-item"><a aria-current="false" href="###"></a></div><div class="tabbar-item"><a class="active"  href="/profile"></a></div></div></div>
+
+
+
+
+    <div class="mask">
+                <div class="mask-tips">
+                  <div class="mask-content">
+                    <p class="tel-phone">400-888-0888</p>
+                  </div>
+                  <div class="flex">
+                    <a href="###" class="mask-a-false">取消</a><a href="tel:4008888888" class="mask-a-ture">拨打</a>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+   </div>
+  </div>
+  <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement;
+            var app = document.getElementById('app');
+    
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                app.style.height = docEl.clientHeight + 'px';
+            };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            recalc();
+        })(document, window);
+        </script>   
+ </body>
+</html>

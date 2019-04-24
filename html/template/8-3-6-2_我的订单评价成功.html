@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="description" content="藤之声" />
+    <meta name="keywords" content="藤之声" />
+    <title>【藤之声】</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon/favicon-32x32.png">
+
+    <script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          if (clientWidth > 768) {
+            clientWidth = 768;
+          }
+          docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        recalc();
+    })(document, window);
+    </script>
+    <style>
+
+    </style>
+        <link rel="stylesheet" href="../static/style/index.css" />
+</head>
+<body>
+
+    <div id="app" class="app-loading">
+        <div class="page page-evaluate">
+          <div class="page-evaluate-pj flex middle">
+            <i class="">满意度星级：</i>
+              <p><span class="star-score-big"><i class="bar" style="width: 40%;"></i></span><b>一般</b></p>
+          </div>
+          <div class="pub-form">
+              <form action="">
+                  <div class="pub-form-textarea">
+                      <textarea name="" id="" placeholder="请输入您的评价~"></textarea>
+                      <a href="###" class="btn btn-org btn-block submit-btn">立即提交</a>
+                  </div>
+              </form>
+          </div>
+          <div class="mask">
+                <div class="mask-tips">
+                  <div class="mask-content">
+                    <p class="mask-content-evaluate-post"><i class="sprite sprite-success"></i><span class="fc-blue">评价提交成功</span></p>
+                  </div>
+                  <div class="flex">
+                    <a href="###" class="mask-a-false">返回订单</a><a href="###" class="mask-a-ture">查看评价</a>
+                  </div>
+                </div>
+              </div>
+
+
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    (function (doc, win) {
+        var docEl = doc.documentElement;
+        var app = document.getElementById('app');
+
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            app.style.height = docEl.clientHeight + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        recalc();
+    })(document, window);
+    </script>
+
+</body>
+</html>

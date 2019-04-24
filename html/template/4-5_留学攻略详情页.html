@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="description" content="藤之声" />
+    <meta name="keywords" content="藤之声" />
+    <title>【藤之声】</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon/favicon-32x32.png">
+
+    <script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          if (clientWidth > 768) {
+            clientWidth = 768;
+          }
+          docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        recalc();
+    })(document, window);
+    </script>
+    <style>
+
+    </style>
+        <link rel="stylesheet" href="../static/style/index.css" />
+</head>
+<body>
+
+    <div id="app" class="app-loading">
+        <div class="page page-item-detail">
+            <div id="头部区域">
+              <div class="page-item-detail-major-image class-detail-top">
+                  <div class="title">哈佛大学法学专业申请技巧全解析</div>
+                  <div class="sub-title"><span>贾伟</span><span>哈佛大学法学院</span><span>博士在读</span></div>
+                  <div class="info-tigongfuwu flex middle"><span class="fc-org">399次播放</span><a href="###" class="sprite sprite-favico-black"></a><a href="###" class="sprite sprite-favico-gray"></a></div>
+                 </div>
+            </div>
+            <div id="留学攻略详情区域">
+              <div class="detail-teacher-info">
+                <div class="strategy-info">
+                    <p>
+                    现在随着生活条件越来越好，越来越多的家庭和学生选择出国留学，社会上也有很多的留学机构提供各种各样的留学产品，那么如何选择最适合自己的留学项目呢？
+                    </p>
+                    <p><img src="../static/image/tmp/class-list.jpg" alt=""></p>
+                    <p>1、对自己和家庭要有一个清醒认识，量力而行，比如父母举债，甚至卖掉唯一住房送孩子出国这是不可取的，会给孩子造成很大的负担。</p>
+                    <p>2、要考虑孩子的自律情况，在国外是相当自由的，社会上诱惑也更多，不少孩子被送出去，结果，哎！可惜了。</p>
+                    <p>3、如果上面两条都没问题，那么就该考虑去哪留学了。韩国，就别去了（培养出来也是抢座的）；日本，我不喜欢这个国家，但确实留学便宜，性价比高；澳大利亚，那的皮肤癌......，短时间应该没事吧，谁知道呢；欧洲和美国的价钱高点，但确实有贵的道理。</p>
+                    <p>4、选择学校和专业前，要考虑好今后要干什么，不少同学在外面上完预科和大学，回来一个月拿5000块钱的工资，估计要干10年才能回本。</p>
+            
+                </div>
+
+
+
+
+              </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    (function (doc, win) {
+        var docEl = doc.documentElement;
+        var app = document.getElementById('app');
+
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            app.style.height = docEl.clientHeight + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        recalc();
+    })(document, window);
+    </script>
+
+</body>
+</html>

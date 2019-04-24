@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="description" content="藤之声" />
+    <meta name="keywords" content="藤之声" />
+    <title>【藤之声】</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon/favicon-32x32.png">
+
+    <script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          if (clientWidth > 768) {
+            clientWidth = 768;
+          }
+          docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        recalc();
+    })(document, window);
+    </script>
+    <style>
+
+    </style>
+        <link rel="stylesheet" href="../static/style/index.css" />
+</head>
+<body>
+
+    <div id="app" class="app-loading">
+        <div class="page page-item-list">
+
+              <div class="order-list">
+                <div class="order-list-div" style="transform: translate3d(-85px, 0px, 0px)">
+                  <div class="order-list-div-info flex">
+                    <i class="sprite sprite-order-guwen"></i>
+                    <p>常青藤大学对于每一个想要去美国留学的申请者来说都是常青藤大学对于每一个想要去美国留学的申请者来说都是</p>
+                  </div>
+                  <div class="order-list-div-code flex middle"><span class="fc-gray">订单编号：888889888</span></div>
+                  <a href="###" class="animation fav-delete">取消收藏</a>
+                </div>
+                <div class="order-list-div">
+                  <div class="order-list-div-info flex">
+                    <i class="sprite sprite-order-guwen"></i>
+                    <p>常青藤大学对于每一个想要去美国留学的申请者来说都是常青藤大学对于每一个想要去美国留学的申请者来说都是</p>
+                  </div>
+                  <div class="order-list-div-code flex middle"><span class="fc-gray">订单编号：888889888</span></div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    (function (doc, win) {
+        var docEl = doc.documentElement;
+        var app = document.getElementById('app');
+
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            app.style.height = docEl.clientHeight + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        recalc();
+    })(document, window);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="description" content="藤之声" />
+    <meta name="keywords" content="藤之声" />
+    <title>【藤之声】</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon/favicon-32x32.png">
+
+    <script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          if (clientWidth > 768) {
+            clientWidth = 768;
+          }
+          docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        recalc();
+    })(document, window);
+    </script>
+    <style>
+
+    </style>
+        <link
+            rel="stylesheet"
+            href="../static/style/index.css"
+        />
+
+</head>
+<body>
+
+    <div id="app" class="app-loading">
+        <div class="page page-main-index">
+            <div id="首页轮播图"><div class="banner"><div class="com-swiper"><div class="com-swiper-item"><a  class=""><div class="responsive-image com-image "><img src="../static/image/index/banner.jpg"></div></div></a></div></div></div>
+            <div id="首页tab">
+                <div class="index-tab-list row flex justify">
+                    <a class="tab-box" href="">
+                        <div class="responsive-image com-image ">
+                            <img src="../static/image/icon/icon01.png">
+                        </div>
+                    <span class="com-title fc-org">专业顾问</span>
+                    <span class="com-gray">名校学长学姐<br>手把手指导</span>
+                </a>
+                <a class="tab-box" href="">
+                        <div class="responsive-image com-image ">
+                            <img src="../static/image/icon/icon02.png">
+                        </div>
+                    <span class="com-title fc-org2">精品课程</span>
+                    <span class="com-gray">深度专业解析<br>系统职业规划</span>
+                </a>
+                <a class="tab-box" href="">
+                        <div class="responsive-image com-image ">
+                            <img src="../static/image/icon/icon03.png">
+                        </div>
+                    <span class="com-title fc-org3">留学攻略</span>
+                    <span class="com-gray">第一手申请经验<br>海外生存指南</span>
+                </a>
+                </div>
+            </div>
+            <div id="数据列表">
+                <div class="index-tuijian-list">
+                    <div class="title">藤之声推荐</div>
+                    <div class="index-list-row">
+                        <ul>
+                            <li class="list-image"><img src="../static/image/index/index_image_test.jpg" alt=""></li>
+                            <li class="list-title">美国常青藤名校申请心得集锦</li>
+                            <li class="list-info">常青藤大学对于每一个想要去美国留学的申请者来说都是一个神一般的存在</li>
+                        </ul>
+                        <ul>
+                            <li class="list-image"><img src="../static/image/index/index_image_test.jpg" alt=""></li>
+                            <li class="list-title">美国常青藤名校申请心得集锦</li>
+                            <li class="list-info">常青藤大学对于每一个想要去美国留学的申请者来说都是一个神一般的存在</li>
+                        </ul>
+                        <ul>
+                            <li class="list-image"><img src="../static/image/index/index_image_test.jpg" alt=""></li>
+                            <li class="list-title">美国常青藤名校申请心得集锦</li>
+                            <li class="list-info">常青藤大学对于每一个想要去美国留学的申请者来说都是一个神一般的存在</li>
+                        </ul>
+                        <ul>
+                            <li class="list-image"><img src="../static/image/index/index_image_test.jpg" alt=""></li>
+                            <li class="list-title">美国常青藤名校申请心得集锦</li>
+                            <li class="list-info">常青藤大学对于每一个想要去美国留学的申请者来说都是一个神一般的存在</li>
+                        </ul>
+                        <ul>
+                            <li class="list-image"><img src="../static/image/index/index_image_test.jpg" alt=""></li>
+                            <li class="list-title">美国常青藤名校申请心得集锦</li>
+                            <li class="list-info">常青藤大学对于每一个想要去美国留学的申请者来说都是一个神一般的存在</li>
+                        </ul>
+                        <ul>
+                            <li class="list-image"><img src="../static/image/index/index_image_test.jpg" alt=""></li>
+                            <li class="list-title">美国常青藤名校申请心得集锦</li>
+                            <li class="list-info">常青藤大学对于每一个想要去美国留学的申请者来说都是一个神一般的存在</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tabbar"><div class="tabbar-wrapper row"><div class="tabbar-item"><a class="active" aria-current="true" href="/"></a></div><div class="tabbar-item"><a aria-current="false" href="###"></a></div><div class="tabbar-item"><a aria-current="false" href="###"></a></div><div class="tabbar-item"><a aria-current="false" href="###"></a></div><div class="tabbar-item"><a aria-current="false" href="/profile"></a></div></div></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    (function (doc, win) {
+        var docEl = doc.documentElement;
+        var app = document.getElementById('app');
+
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            app.style.height = docEl.clientHeight + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        recalc();
+    })(document, window);
+    </script>
+
+</body>
+</html>
